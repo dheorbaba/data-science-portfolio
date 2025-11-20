@@ -1,0 +1,126 @@
+title: "Data Science Portfolio"
+description: "Projects, research, notebooks, and analytics work."
+baseurl: "" 
+url: "https://dheorbaba.github.io"
+
+# ---------------------------------------------------------
+# Theme & Appearance
+# ---------------------------------------------------------
+theme: "minimal-mistakes-jekyll"
+
+# Site skin options include: default, air, contrast, dark, neon, ocean
+minimal_mistakes_skin: "air"
+
+logo: "/assets/images/logo.png"
+
+# ---------------------------------------------------------
+# Author Info
+# ---------------------------------------------------------
+author:
+  name: "Your Name"
+  avatar: "/assets/images/avatar.png"
+  bio: "Data Scientist | Analyst | ML Enthusiast"
+  location: "Earth"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/YOUR_USERNAME"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/YOUR_USERNAME"
+    - label: "Twitter"
+      icon: "fab fa-twitter"
+      url: "https://twitter.com/YOUR_HANDLE"
+
+# ---------------------------------------------------------
+# Markdown, Math, Syntax Highlighting
+# ---------------------------------------------------------
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+# ---------------------------------------------------------
+# Plugins (works with GitHub Pages)
+# ---------------------------------------------------------
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jemoji
+  - jekyll-include-cache
+
+paginate: 5
+paginate_path: "/page:num/"
+
+# ---------------------------------------------------------
+# Collections (Projects, Notebooks)
+# ---------------------------------------------------------
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+  notebooks:
+    output: true
+    permalink: /notebooks/:title/
+
+# Defaults: Layout for posts & collections
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      mathjax: true
+      toc: true
+      toc_label: "Contents"
+      toc_sticky: true
+
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      
+  - scope:
+      path: ""
+      type: notebooks
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      mathjax: true
+
+# ---------------------------------------------------------
+# Social Sharing
+# ---------------------------------------------------------
+social:
+  type: "Person"
+  links:
+    - "https://github.com/YOUR_USERNAME"
+    - "https://linkedin.com/in/YOUR_USERNAME"
+
+# ---------------------------------------------------------
+# Analytics (optional)
+# ---------------------------------------------------------
+google_analytics: "UA-XXXXXX-1"
+
+show_downloads = false 
+# ---------------------------------------------------------
+# Build Settings
+# ---------------------------------------------------------
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+
+  
