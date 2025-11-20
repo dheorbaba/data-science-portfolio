@@ -3,7 +3,7 @@
 📍 Abeokuta, Nigeria  
 📧 adekunleseun111@gmail.com  
 🔗 LinkedIn: www.linkedin.com/in/adekunle-adeola  
-🔗 Portfolio: dheorbaba.github.io
+🔗 Portfolio: www.dheorbaba.github.io
 
 ---
 
